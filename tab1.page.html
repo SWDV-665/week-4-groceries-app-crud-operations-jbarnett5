@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Grocery
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+      <ion-item-sliding>
+        <ion-item>
+          <h2>Milk</h2>
+          <p>1</p>
+        </ion-item>
+        <ion-item-options>
+            <button (click)="editItem(item)" ion-button color="primary" icon-start>
+              <ion-icon name="create"></ion-icon>
+              Edit
+            </button>
+          <button ion-button color="secondary" icon-start>
+            <ion-icon name="trash"></ion-icon>
+            Done
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+      <ion-item-sliding>
+          <ion-item>
+            <h2>Bread</h2>
+            <p>2</p>
+          </ion-item>
+          <ion-item-options>
+            
+            <button ion-button color="secondary" icon-start>
+              <ion-icon name="trash"></ion-icon>
+              Done
+            </button>
+          </ion-item-options>
+        </ion-item-sliding>  
+</ion-list> 
+<ion-fab bottom right>
+  <button (click)="addItem()" ion-fab mini><ion-icon name="add"></ion-icon></button>
+</ion-fab>         
+</ion-content>
